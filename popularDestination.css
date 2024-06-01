@@ -1,0 +1,228 @@
+body {
+  font-family: Georgia;
+  background-color: rgba(0, 213, 255, 0.051);
+  margin: 0;
+  padding: 0;
+}
+
+.plan .sub a:hover {
+  background-color: #c0dee8;
+}
+
+.plan a:hover {
+  background-color: lightgreen;
+}
+
+.plan .sub li {
+  position: relative;
+  overflow: hidden;
+  height: 0px;
+  -moz-transition: height 300ms;
+  -webkit-transition: height 300ms;
+  -o-transition: height 300ms;
+  -ms-transition: height 300ms;
+  transition: height 300ms;
+}
+
+.plan .sub {
+  z-index: 3;
+  display: inline-block;
+  position: absolute;
+  top: 60px;
+  background-color: rgba(255, 200, 30, 0.920);
+  box-shadow: 10px 10px 10px grey;
+  transform: rotate(-2deg);
+  border-radius: 8px;
+}
+
+.plan ul li:hover .sub li {
+  top: 0px;
+  height: 35px;
+}
+
+.share1 {
+  display: none;
+}
+
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #d91717;
+  text-shadow: 2px 2px 2px #58e44b;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #81e48b;
+  text-shadow: 2px 2px 2px #0dc600;
+  transform: scale(1.1);
+  font-size: 18px;
+}
+
+/* Destination details styles */
+#destination-details {
+  padding: 20px;
+}
+
+.destination {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.destination img {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease-in-out;
+}
+
+.destination img:hover {
+  transform: scale(1.1);
+}
+
+.destination h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.destination p {
+  margin-bottom: 20px;
+}
+
+.destination h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.destination ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.destination ul li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.destination ul li:hover {
+  transform: scale(1.1);
+}
+
+.destination ul li img {
+  width: 100%;
+  height: auto;
+}
+
+.destination ul li p {
+  margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  height: auto;
+  width: 100vw;
+  text-align: center;
+}
+
+footer a {
+  color: rgb(173, 188, 255);
+}
+
+footer .content {
+  width: 65%;
+  margin: 0px auto;
+  padding: 5px 0px 20px 0px;
+}
+
+footer .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #CCCCCC;
+  color: #333333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer h2 {
+  color: #179fd9c2;
+}
+
+footer a:hover {
+  transform: scale(1.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add special styling to the text */
+h3,
+h4,
+p {
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Add some background and padding to the images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  background-color: #555;
+  padding: 5px;
+}
+
+@media only screen and (max-width:650px) {
+  .share1 {
+    display: flex;
+  }
+
+  .share2 {
+    display: none;
+  }
+}

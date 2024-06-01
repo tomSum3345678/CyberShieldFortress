@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Shield Fortress</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+  <head>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <div class="plan">
+          <ul>
+            <li>
+              <a href="#">Guide</a>
+              <ul class="sub">
+                <li><a href="plan1.html">1: DDOS</a></li>
+                <li><a href="plan2.html">2: SQL Injection</a></li>
+                <li><a href="plan3.html">3: Password Attacks</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <li class="share"><a href="rating.html">Give us Feedback</a></li>
+      </ul>
+    </nav>
+  </head>
+
+
+  <section id="home">
+    <div class="hero">
+      <h1>Welcome to CyberShield Fortress</h1>
+      <h3>Learn how to protect your data</h3><br>
+      <a href="#destinations" class="btn">Discover More</a>
+      <div class="arrow-container">
+        <div class="arrow left-arrow"></div>
+        <div class="arrow right-arrow"></div>
+      </div>
+    </div>
+  </section>
+
+  <h2 style="font-size: 36px; margin-left: 150px;">Common Types of Cyber Attacks</h2>
+  <section id="destinations">
+    <div class="destination">
+      <img src="./img/beijing.jpg" alt="Beijing">
+      <h3>DDOS</h3>
+      <p>DDoS attacks use multiple compromised systems to launch the attack, making it harder to defend against.</p>
+      <a href="ddos.html" class="btn">Learn More</a>
+    </div>
+    <div class="destination">
+      <img src="./img/Shanghei.jpg" alt="Shanghai">
+      <h3>SQL Injection</h3>
+      <p>An attack where malicious SQL statements are inserted into an entry field for execution, allowing attackers to view, modify, or delete database data.</p>
+      <a href="sql.html" class="btn">Learn More</a>
+    </div>
+    <div class="destination">
+      <img src="./img/xian.jpg" alt="Xi'an">
+      <h3>Password Attacks</h3>
+      <p>Various techniques used to obtain a user's password, including guessing, cracking, phishing, or keylogging.</p>
+      <a href="PATK.html" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About CyberShield Fortress</h2>
+    <p><b>We are dedicated to providing the public with the latest cybersecurity awareness and knowledge, helping everyone understand and defend against various cyber threats. Our mission is to educate and cultivate users' cybersecurity consciousness, enabling them to better protect themselves from the dangers of cybercrime.
+    </b></p>
+  </section><br><br>
+
+
+  <h2 style="font-size: 36px; margin-left: 150px;">How to Prevent? </h2>
+  <section id="experiences">
+    <div class="experience">
+      <img src="./img/foshan.jpg" alt="Preventing the DDOS">
+      <h3>Preventing the DDOS</h3>
+      <p>Discover effective strategies to prevent and mitigate Distributed Denial of Service (DDoS) attacks.
+	  Learn about the latest techniques and tools used in cybersecurity.</p>
+      <a href="preventingDDOS.html" class="btn" target="blank">See More</a>
+    </div>
+    <div class="experience">
+      <img src="./img/guilin.jpg" alt="Preventing the SQL Injection">
+      <h3>Preventing the SQL Injection</h3>
+      <p>Prevent SQL injection and protect your database. Gain insights into best practices and techniques to protect your applications from SQL injection attacks.</p>
+      <a href="preventingSQLInjection.html" class="btn" target="blank">See More</a>
+    </div>
+    <div class="experience">
+      <img src="./img/yangtze-river.jpg" alt="Preventing the Password Attacks">
+      <h3>Preventing the Password Attacks</h3>
+      <p>Learn how to strengthen your password security and protect against common password attacks. </p>
+      <a href="preventingPasswordAttacks.html" onclick="sendMessageToExperiences('xian')" class="btn"  target="blank">See More</a>
+     
+    </div>
+
+  </section>
+
+
+
+
+  <footer>
+    <div class="content">
+      <h2>Contact Us</h2>
+      We would love to hear from you! If you have any questions, feedback, or inquiries, please feel free to
+      reach out to us using the contact information provided below:
+
+      <div class="contact-info">
+        <h3>Email: <a href="mailto:hgg897992@gmail.com">hgg897992@gmail.com</a></h3>
+        <h3>Phone: <a href="tel:+852 5114 2918">+852 5114 2918</a></h3>
+        <h3>Address: King Ling Road, Tseung Kwan O, New Territories</h3>
+      </div>
+
+      <p>Please provide your feedback and help us understand your awareness of network security issues.</p>
+      <rating>
+        <a href="rating.html" class="btn" target="_blank">Fill Questionnaire</a>
+      </rating>
+      <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+body {
+  font-family: Georgia;
+  background-color: rgba(0, 213, 255, 0.051);
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  font-size: 20px;
+  background-color: #faf9fba3;
+  background-size: 100% auto;
+  color: #1bead9fd;
+  height: 20vw;
+  width: 100%;
+}
+
+.plan .sub a:hover {
+  background-color: #c0dee8;
+}
+
+.plan a:hover {
+  background-color: lightgreen;
+}
+
+.plan .sub li {
+  position: relative;
+  overflow: hidden;
+  height: 0px;
+  -moz-transition: height 300ms;
+  -webkit-transition: height 300ms;
+  -o-transition: height 300ms;
+  -ms-transition: height 300ms;
+  transition: height 300ms;
+}
+
+.plan .sub {
+  z-index: 3;
+  display: inline-block;
+  position: absolute;
+  top: 60px;
+  background-color: rgba(255, 200, 30, 0.920);
+  box-shadow: 10px 10px 10px grey;
+  transform: rotate(-2deg);
+  border-radius: 8px;
+}
+
+.plan ul li:hover .sub li {
+  top: 0px;
+  height: 35px;
+}
+
+.share1 {
+  display: none;
+}
+
+main {
+  padding: 20px;
+}
+
+main .title {
+  font-size: 40px;
+}
+
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #d91717;
+  text-shadow: 2px 2px 2px #58e44b;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #81e48b;
+  text-shadow: 2px 2px 2px #0dc600;
+  transform: scale(1.1);
+  font-size: 18px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px;
+  background-color: #f2f2f2;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#destinations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form textarea {
+  width: 95%;
+}
+
+#budget {
+  max-width: 1000px;
+  margin-left: 20px;
+  background-color: #f2f2f2;
+  padding: 100px;
+  transition: transform 0.3s ease;
+}
+
+#budgetForm label,
+#budgetForm input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#budgetForm button {
+  margin-top: 10px;
+}
+
+#budgetResult {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.experience {
+  flex: 0 0 300px;
+  margin: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 450px;
+}
+
+.experience:hover {
+  transform: scale(1.05);
+}
+
+.experience img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.experience h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.experience p {
+  margin-bottom: 20px;
+}
+
+#experiences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  height: auto;
+  width: 100vw;
+  text-align: center;
+}
+
+footer a {
+  color: rgb(173, 188, 255);
+}
+
+footer .content {
+  width: 65%;
+  margin: 0px auto;
+  padding: 5px 0px 20px 0px;
+}
+
+footer .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #CCCCCC;
+  color: #333333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer h2 {
+  color: #179fd9c2;
+}
+
+footer a:hover {
+  transform: scale(1.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media only screen and (max-width:1000px) {
+
+  #flex-container #nav {
+    display: none;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width:650px) {
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+  }
+
+  .share1 {
+    display: flex;
+  }
+
+  .share2 {
+    display: none;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Preventing SQL Injection</title>
+  <link rel="stylesheet" type="text/css" href="prevent.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <head>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <div class="plan">
+          <ul>
+            <li>
+              <a href="#">Guide</a>
+              <ul class="sub">
+                <li><a href="plan1.html">1: DDOS</a></li>
+                <li><a href="plan2.html">2: SQL Injection</a></li>
+                <li><a href="plan3.html">3: Password Attacks</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <li class="share"><a href="rating.html">Give us Feedback</a></li>
+
+      </ul>
+    </nav>
+  </head>
+  
+  <h1>Preventing SQL Injection</h1>
+  <p class="sql-injection-description">SQL injection is a common web application vulnerability that allows attackers to manipulate SQL queries and gain unauthorized access to your database. <br><br>Here are some best practices to prevent SQL injection:</p>
+  <br><br>
+  <h2>1. Use Prepared Statements</h2>
+    <img src="./img/Prepared Statements.png" alt="Prevent SQL Injection Image">
+	<div class="video-container">
+	<iframe width="600" height="390" src="https://www.youtube.com/embed/nLinqtCfhKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+   <p>Prepared statements, also known as parameterized queries, are a powerful defense against SQL injection. They allow you to separate SQL code from user input by using placeholders. The database engine then binds the user input to the placeholders, automatically escaping special characters and treating them as data rather than executable code.</p>
+  <br><br>
+  <h2>2. Sanitize User Input</h2>
+  <div class="video-container">
+    <iframe width="600" height="390" src="https://www.youtube.com/embed/fMZNRKSRb8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <p>Always validate and sanitize user input before using it in SQL queries. This involves removing or escaping any special characters that could be used to manipulate the query. Use input validation techniques such as whitelisting, blacklisting, and regular expressions to ensure that only expected input is accepted.</p>
+  <br><br>
+  <h2>3. Limit Database Privileges</h2>
+    <div class="video-container">
+    <iframe width="600" height="390" src="https://www.youtube.com/embed/hVLaRQ3TjGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <p>Ensure that your database user accounts have the minimum required privileges. Avoid using privileged accounts for regular application operations. By limiting the privileges of your database accounts, you reduce the potential impact of a successful SQL injection attack.</p>
+  <br><br>
+  <h2>4. Implement Web Application Firewalls (WAF)</h2>
+    <div class="video-container">
+    <iframe width="600" height="390" src="https://www.youtube.com/embed/p8CQcF_9280" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <p>Web Application Firewalls (WAFs) can help detect and block SQL injection attacks by analyzing incoming requests and filtering out malicious code. WAFs can be configured to detect common SQL injection patterns and block or log suspicious requests.</p>
+  <br><br>
+  <h2>5. Regularly Update and Patch Your Software</h2>
+      <div class="video-container">
+    <iframe width="600" height="390" src="https://www.youtube.com/embed/DJyPLy07icw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <p>Keep your web application framework, database management system, and other software up to date with the latest security patches. Developers often release updates to address known vulnerabilities, including those related to SQL injection. Regularly applying these updates helps protect your application from potential attacks.</p>
+  
+</body>
+</html>

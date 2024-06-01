@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Attack - SQL Injection</title>
+  <link rel="stylesheet" type="text/css" href="popularDestination.css">
+</head>
+
+<body>
+
+  <head>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <div class="plan">
+          <ul>
+            <li>
+              <a href="#">Guide</a>
+              <ul class="sub">
+                <li><a href="plan1.html">1: DDOS</a></li>
+                <li><a href="plan2.html">2: SQL Injection</a></li>
+                <li><a href="plan3.html">3: Password Attacks</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <li class="share1"><a href="rating.html">Give us Feedback</a></li>
+        <li class="share2"><a href="rating.html">Give us Feedback</a></li>
+
+      </ul>
+    </nav>
+  </head>
+  <section id="destination-details">
+    <div class="destination">
+      <img src="./img/Shanghei.jpg" alt="Shanghai">
+      <h3>SQL Injection</h3>
+      <p>Learn about SQL Injection attacks and how hackers exploit vulnerabilities to steal sensitive data.</p>
+
+<h4>Top Types of SQL Injection:</h4>
+  <ul>
+    <li>
+      <img src="./img/sql-injection1.gif">
+      <p>Error-based SQL Injection</p>
+      <p>Hackers trigger database errors to identify vulnerable parameters and extract data.</p>
+    </li>
+     <li>
+      <img src="./img/sql-injection2.png">  
+      <p>Blind SQL Injection</p>
+      <p>Hackers make multiple queries to databases to extract data piece by piece without errors.</p>
+    </li>
+     <li>
+      <img src="./img/sql-injection3.png">
+	  <img src="./img/sql-injection4.gif">
+      <p>Time-based SQL Injection</p>  
+      <p>Time-based techniques are often used to achieve tests when the hacker has no other way to retrieve information from the database server. This kind of attack injects a SQL segment which contains a specific DBMS function or heavy query that generates a time delay. Depending on the time it takes to get the server response, it is possible to deduct some information. As you can guess, this type of inference approach is particularly useful for blind and deep-blind SQL injection attacks. Timing differences in responses help hackers infer data by altering database query execution times.</p> 
+    </li>
+  </ul>
+
+   <h4>Prevention Methods:</h4>
+   <ul>
+     <li>
+       <img src="./img/sql-prevention1.jpeg">
+       <p>Input Validation</p>
+       <p>Validate all input data on server-side to remove harmful characters before queries.</p>  
+     </li>
+      <li>
+       <img src="./img/sql-prevention2.png">
+       <p>Prepared Statements</p>
+       <p>Use prepared parameterized queries instead of concatenating variables into SQL.</p>
+     </li>
+      <li>
+       <img src="./img/sql-prevention3.jpg">
+       <p>Least Privilege Principle</p>
+       <p>Restrict database users access only to what they require for their roles.</p>  
+     </li>
+   </ul>
+
+   <h4>Stay Protected!</h4>
+    <p>Learn more about SQL injection and implement robust prevention techniques to secure your applications
+   <a href="preventingDDOS.html" class="btn" target="blank">here.</a></p>
+   
+</div>
+  </section>
+
+  <footer>
+    <div class="content">
+      <h2>Contact Us</h2>
+      We would love to hear from you! If you have any questions, feedback, or inquiries, please feel free to
+      reach out to us using the contact information provided below:
+
+      <div class="contact-info">
+        <h3>Email: <a href="mailto:hgg897992@gmail.com">hgg897992@gmail.com</a></h3>
+        <h3>Phone: <a href="tel:+852 5114 2918">+852 5114 2918</a></h3>
+        <h3>Address: King Ling Road, Tseung Kwan O, New Territories</h3>
+      </div>
+
+<p>Please provide your feedback and help us understand your awareness of network security issues.</p>
+
+      <rating>
+        <a href="rating.html" class="btn" target="_blank">Fill Questionnaire</a>
+      </rating>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

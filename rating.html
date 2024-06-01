@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="rating.css">
+
+<body>
+
+  <head>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <div class="plan">
+          <ul>
+            <li>
+              <a href="#">Guide</a>
+              <ul class="sub">
+                <li><a href="plan1.html">1: DDOS</a></li>
+                <li><a href="plan2.html">2: SQL Injection</a></li>
+                <li><a href="plan3.html">3: Password Attacks</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+
+      </ul>
+    </nav>
+  </head>
+  <form>
+    <main>
+      <h2>Could you please provide us with some feedback on our website for improvement?</h2>
+
+      <fieldset>
+        <legend>Your suggestions</legend>
+        <textarea rows="8" cols="50" name="comment">In less 100 words...</textarea><br />
+
+        <div class="rating">
+          Satisfaction with our website :
+          <input type="radio" name="rating" value="1" id="star1" />
+          <label for="star1"></label>
+          <input type="radio" name="rating" value="2" id="star2" />
+          <label for="star2"></label>
+          <input type="radio" name="rating" value="3" id="star3" />
+          <label for="star3"></label>
+          <input type="radio" name="rating" value="4" id="star4" />
+          <label for="star4"></label>
+          <input type="radio" name="rating" value="5" id="star5" />
+          <label for="star5"></label>
+        </div>
+      </fieldset>
+      <input type="submit" value="Submit" onclick="RatingSubmit()">
+	  
+<div class="form-wrapper">
+<h2>Please fill the questionnaire and help us understand your awareness of network security issues.</h2>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSel0FoXkWjSsCVIo3_8Ar8klNzCmpd3kPq7DNvV8ocOvzS6ag/viewform?usp=sharing">Go To The Form</a>
+</div>
+      <script>
+        function RatingSubmit() {
+          event.preventDefault(); // Prevent form submission
+
+          // Check if a button is selected
+          var stars = document.querySelectorAll('input[type="radio"]');
+          var starSelected = false;
+          for (var i = 0; i < stars.length; i++) {
+            if (stars[i].checked) {
+              starSelected = true;
+              break;
+            }
+          }
+          if (starSelected) {
+            alert("Thank you for sharing your travel experience with us. Your feedback helps us enhance the user experience.");
+            window.location.href = "index.html";
+          } else {
+            alert("Please select stars");
+          }
+        }
+      </script>
+    </main>
+  </form>
+
+  <footer>
+    <div class="content">
+      <h2>Contact Us</h2>
+      We would love to hear from you! If you have any questions, feedback, or inquiries, please feel free to
+      reach out to us using the contact information provided below:
+
+      <div class="contact-info">
+        <h3>Email: <a href="mailto:hgg897992@gmail.com">hgg897992@gmail.com</a></h3>
+        <h3>Phone: <a href="tel:+852 5114 2918">+852 5114 2918</a></h3>
+        <h3>Address: King Ling Road, Tseung Kwan O, New Territories</h3>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>
